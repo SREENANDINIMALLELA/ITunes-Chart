@@ -26,7 +26,7 @@ class MusicChart extends React.Component{
   }
   render(){
     return (
-      <div>
+      <div className="chart">
       <h1>iTunes</h1>
       <ITunes musicChart ={this.state.musicChart}
       ontuneSelected={this.handleTuneSelected}/>
