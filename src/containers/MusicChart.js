@@ -1,5 +1,6 @@
 import React from 'react'
 import ITunes from '../components/ITunes'
+import ITuneDetail from '../components/ITuneDetail'
 class MusicChart extends React.Component{
   constructor(props){
     super(props);
@@ -29,6 +30,7 @@ class MusicChart extends React.Component{
       <h1>iTunes</h1>
       <ITunes musicChart ={this.state.musicChart}
       ontuneSelected={this.handleTuneSelected}/>
+      <ITuneDetail iTune ={this.state.selectedMusciAlbum}/>
       </div>
     )
   }
